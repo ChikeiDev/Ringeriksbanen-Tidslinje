@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  max-width: 1340px;
+  margin: 0 auto;
+  @apply bg-[#fff3e0] dark:bg-[#21222d];
+}
+
+/* Loader Styles */
+.loader {
+  border-top-color: #3498db;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom Background Colors */
+.bg-light {
+  @apply bg-[#fff3e0];
+}
+
+.bg-dark {
+  @apply bg-[#21222d];
+}
